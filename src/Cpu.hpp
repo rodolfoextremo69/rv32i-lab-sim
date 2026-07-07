@@ -1,4 +1,4 @@
-#pragma once
+﻿#pragma once
 
 #include "Memory.hpp"
 
@@ -37,6 +37,8 @@ private:
     Memory memory_;
     bool halted_;
 
+    void executeOne(bool trace);
     void forceZeroRegister();
+
     static int registerIndexFromName(const std::string& name);
 };
